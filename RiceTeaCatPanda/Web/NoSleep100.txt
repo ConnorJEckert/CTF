@@ -1,0 +1,14 @@
+No Sleep
+100
+
+Jess doesn't get enough sleep, since he's such a gamer so in this challenge, you'll be staying up with him until 4:00 in the morning :D on a Monday! Let's go, gamers!
+
+Hint: https://riceteacatpanda.wtf/onlyrealgamers
+
+
+page gives countdown till 27 Jan 4:20
+
+cookie named "gamerfuel" has value "Jan 27, 2020 04:20:00"
+editing cookie to past time ends countdown and displays flag
+
+rtcp{w0w_d1d_u_st4y_up?}

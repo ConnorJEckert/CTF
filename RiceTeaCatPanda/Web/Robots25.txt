@@ -1,0 +1,22 @@
+Robots. Yeah, I know, pretty obvious.
+25
+
+So, we know that Delphine is a cook. A wonderful one, at that. But did you know that GIANt used to make robots? Yeah, GIANt robots.
+
+
+
+
+https://riceteacatpanda.wtf/robots.txt
+
+User-agent: *
+Disallow:
+/robot-nurses
+/flag
+
+
+https://riceteacatpanda.wtf/flag
+rickroll
+
+
+https://riceteacatpanda.wtf/robot-nurses
+rtcp{r0b0t5_4r3_g01ng_t0_t4k3_0v3r_4nd_w3_4r3_s0_scr3w3d}
