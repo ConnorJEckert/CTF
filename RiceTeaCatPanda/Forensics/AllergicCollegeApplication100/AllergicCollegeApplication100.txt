@@ -1,0 +1,10 @@
+Allergic College Application
+100
+
+I was writing my common app essay in Mandarin when my cat got on my lap and sneezed. Being allergic, I sneezed with him, and when I blew my nose into a tissue, the text for my essay turned really weird! Get out, Bad Kitty!
+
+file uses a different character encoding
+encoding with GBK and then dumping into google translate gives english text
+
+flag was raw chinese characters (atom wont display here)
+rtcp{我_只_修改_了_两_次}

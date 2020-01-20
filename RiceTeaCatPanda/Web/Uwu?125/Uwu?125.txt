@@ -1,0 +1,23 @@
+Uwu?
+125
+
+ᵘʷᵘ oh no ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ hecc sorry guys ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ sorry im dropping ᵘʷᵘ my uwus all over the ᵘʷᵘ place ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ oh no I lost one ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ ᵘʷᵘ
+
+ah, Jake, you idiot
+
+Hint1: https://riceteacatpanda.wtf/uwu
+Hint2: This challenge gets progressively harder the faster your internet is if you do it manually
+
+page text is just uwus
+but url redirects multiple times first
+
+/omgmeow
+/pandaaaaaaa
+/you-better-wash-your-rice
+/footprint
+/uwustorage
+
+wget each page
+
+you-better-wash-your-rice has the flag in the text
+rtcp{uwu_,_1_f0und_y0u} 

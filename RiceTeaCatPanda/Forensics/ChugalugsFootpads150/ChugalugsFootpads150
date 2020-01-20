@@ -1,0 +1,40 @@
+Chugalug's Footpads
+150
+
+Chugalug makes footpads that he can chug and lug. However, his left one is different from his right... I wonder why?
+
+
+cmp -l left.jpg right.jpg | gawk '{printf "%08X %02X %02X\n", $1, strtonum(0$2), strtonum(0$3)}'^C
+000006B8 72 52
+000006B9 74 4D
+000007F9 63 45
+000007FA 70 51
+00000918 7B 70
+00000919 54 75
+0000091A 68 42
+00000B26 33 A0
+00000B27 7A 33
+00000B28 65 6C
+00000BC8 5F 64
+00000BC9 5E 81
+00000BCB 72 14
+00000C26 33 71
+00000D04 5F 0C
+00000E2A 6E 11
+00000E2B 30 9A
+00001077 54 4A
+00001135 63 20
+0000113D 48 02
+000012A7 34 32
+000012A8 6E E7
+00001405 43 2F
+0000141D 31 4C
+0000141E 61 4A
+00001518 35 F4
+00001519 7D F2
+
+used VbinDiff for visualizing
+
+left.jpg bytes that differ are hex for
+
+rtcp{Th3ze_^r3_n0TcH4nC1a5}

@@ -1,0 +1,26 @@
+cat-chat
+125
+
+nyameowmeow nyameow nyanya meow purr nyameowmeow nyameow nyanya meow purr nyameowmeow nyanyanyanya nyameow meow purr meow nyanyanyanya nya purr nyanyanyanya nya meownyameownya meownyameow purr nyanya nyanyanya purr meowmeownya meowmeowmeow nyanya meownya meowmeownya purr meowmeowmeow meownya purr nyanyanyanya nya nyameownya nya !!!!
+
+Hint: once you've figured this out, head to discord's #catchat channel.
+
+nya = .
+meow = -
+purr = stop
+
+.-- .- .. - / .-- .- .. - / .-- .... .- - / - .... . / .... . -.-. -.- / .. ... / --. --- .. -. --. / --- -. / .... . .-. .
+WAIT WAIT WHAT THE HECK IS GOING ON HERE
+
+searching the discord for the string that encodes rtcp
+"nyameownya meow meownyameownya nyameowmeownya"
+
+gives you this message
+"meownyanya nyanyameow nyameownya nyanya meownya meowmeownya purr meownyanyanya nyameownya nyanya meow nyameow nyanya meownya nyanyanya purr meownyanyanya nyameownya nyameow nyanya meownya purr meownyanya nyameownya nyameow nyanya meownya purr meownya meowmeowmeow meow purr nyameow purr nyanyanya nyanya meownya meowmeownya nyameownyanya nya purr nyameowmeownya meowmeowmeow nyameownyanya nyanya meow nyanya meownyameownya nyanya nyameow meownya purr nyameownyanya nya nyanyameownya meow purr meow nyanyanyanya nya meownyameownya meowmeowmeow nyanyameow meownya meow nyameownya meownyameowmeow nyameownyameownyameow
+nyameownya meow meownyameownya nyameowmeownya meowmeowmeownyanyanya meow nyanyanyanya nyameowmeowmeowmeow nyanyanyanyanya nyanyameowmeownyameow nyameowmeowmeowmeow meowmeownyanya nyanyameowmeownyameow nyameow nyanyameowmeownyameow meownyameownya nyanyanyanyameow meow nyanyameowmeownyameow meownyameownya nyanyanyanya nyanyanyanyameow meow nyanyameowmeownyameow meownya meowmeowmeowmeowmeow meow nyanyameowmeownyameow nyameow nyanyameowmeownyameow meowmeow nyanyanyameowmeow meowmeow nyanyanyameowmeow nyanyameowmeownyameow meownyameownya nyanyanyanya nyanyanyanyameow meow"
+
+translates to
+during?britains?brain?drain?not?a?single?politician?left?thecountry?tcp?th15?1z?a?c4t?ch4t?n0t?a?m3m3?ch4t
+
+rtcp?th15?1z?a?c4t?ch4t?n0t?a?m3m3?ch4t
+rtcp{th15_1z_a_c4t_ch4t_n0t_a_m3m3_ch4t}
