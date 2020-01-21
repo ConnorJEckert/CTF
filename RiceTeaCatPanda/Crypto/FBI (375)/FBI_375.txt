@@ -1,0 +1,12 @@
+FBI
+375
+
+Happy MLK day! (January 20th for y'alls non-American folk).
+
+Hint1:
+What's does the challenge name have to do with its theme?
+
+Hint2:
+Flag format is rtcp(...) not rtcp{}
+
+Hint3:The text you use to solve this challenge may slightly vary by a few characters, spacing etc. If these exists, correct them to make it a valid string of english words separated by -s
