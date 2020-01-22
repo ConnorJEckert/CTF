@@ -10,3 +10,9 @@ The first character is w
 
 Hint2:
 The flag is written in standard leet, the only exceptions are the flag wrapping (rtcp{}) and underscores (_)
+
+
+
+use GDB to pass the three  checks that the binary does before unscrambling the flag
+
+rtcp{wh37h3r_1n4n1m473_f16ur35_0r_un4u7h0r1z3d_c0d3_7h3r35_4lw4y5_4_6h057_1n_7h3_5y573m_1056_726_00}
