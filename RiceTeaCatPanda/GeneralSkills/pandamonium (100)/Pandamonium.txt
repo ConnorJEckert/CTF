@@ -1,0 +1,7 @@
+
+91 7 10 D 95 42 28 A
+element on the periodic table
+Pa N Ne D Am Mo Ni A
+
+flag:
+rctp{PaNNeDAmMoNiA}

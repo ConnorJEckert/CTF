@@ -1,0 +1,8 @@
+
+Totally NO¯Γ̶ IX
+
+IX = 9
+100(hex) - 9(hex) = F7
+
+flag:
+rtcp{F7}

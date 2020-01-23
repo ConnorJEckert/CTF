@@ -1,0 +1,7 @@
+
+google types of internet cookies
+
+find the one that matches the function they described in the chal text
+She wants him to find the cookie that help websites remember her information and settings when she visit them in the future
+
+rtcp{persistent_cookies}

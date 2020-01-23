@@ -1,0 +1,10 @@
+image is pigpen cipher
+decodes to
+
+
+ZSAZ{HJKAHR_QQGIA_VNR_PM_NNFB}
+zsaz{hjkahr_qqgia_vnr_pm_nnfb}
+
+
+xyhv{ufsifx_xmtei_dlx_wi_ajnj}
+bmtd{uncsjl_jutms_npl_iq_arxt}
