@@ -4,3 +4,9 @@ Sticks and Stones
 may break my bones but words could never hurt me
 
 Hint:https://github.com/JEF1056/riceteacatpanda/tree/master/Sticks and Stones (50)
+
+
+search file for a flag with an underscore
+
+cat  worbz.txt | grep -o -P '.{0,10}_.{0,5}'
+rtcp{w0Rd5_HuRt_,_d0n'T_Bu11y_,_k1Dz}
