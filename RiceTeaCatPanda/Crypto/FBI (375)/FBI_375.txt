@@ -10,3 +10,8 @@ Hint2:
 Flag format is rtcp(...) not rtcp{}
 
 Hint3:The text you use to solve this challenge may slightly vary by a few characters, spacing etc. If these exists, correct them to make it a valid string of english words separated by -s
+
+
+Run script.py 
+key is paragraph, line, character
+rtcp(happy-fiftieth-mlk-day-america-has-come-a-long-way)

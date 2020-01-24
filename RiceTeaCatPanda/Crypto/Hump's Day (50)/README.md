@@ -23,3 +23,9 @@ Happy Saturday -5
 Hints
 -------------------------------------------
 - flag is entered in the format `rtcp{tis_i_the_frenchiest_fry}`
+- Hump's day is on what day of this ctf?
+- The Lotus would be proud.
+
+Decimate your enemies, gather more hexenon, string the grineer up!
+
+simple. Isn't it?
