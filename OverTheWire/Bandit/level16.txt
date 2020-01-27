@@ -1,0 +1,123 @@
+Bandit Level 16 → Level 17
+Level Goal
+
+The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
+Commands you may need to solve this level
+
+ssh, telnet, nc, openssl, s_client, nmap
+
+
+sshpass -p cluFn7wTiGryunymYOu4RcffSxQluehd ssh bandit16@bandit.labs.overthewire.org -p 2220
+bandit16@bandit:~$ nmap localhost -p 31000-32000
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2020-01-27 23:21 CET
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00024s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+31518/tcp open  unknown
+31790/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
+
+
+bandit16@bandit:~$ openssl s_client -connect localhost:31790
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIEHYaZVDANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjAwMTA1MTU1NzU4WhcNMjEwMTA0MTU1NzU4WjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALnNkoES
+dc+bJYmoBnjc43xt4n/zq0OIlxe37wkJzsH4Zkr5wHwoRTH4Q/g4MarLhcHpyFS7
+YBT1hFdxG76tlWhQKjqe680PnxHMrZJFVtO/Gscl9luzalM/h2AebrJ0lX9pPTBX
+Yrizk17mvyl50yYj9MLuvIAfb353gv3frwcRAgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBADRDuQtY5NX3aZpNcgracBO3f5fNhdTYp+qERd6xVhq5wdEn9iuJ
+zXJh/halRZuriUnqoQmhhmHlBX4NGVVue+9OSh3yfGeNDkP+rnZ0Xji4gXRiBZao
++HCq5y9yG1sEufHUFCq2ZRZQ9IOghWiA/qxxGQQD+hocFVljquCricbf
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: EE379F2295F9233CA9AEAAF4FC5AACD0F5372274AA29DF2939BB6FF455DD3D4D
+    Session-ID-ctx:
+    Master-Key: CA0438BF91838FCC371D235617E4D34ADFC2DBEFA8EE4BD2D39AA201A1DC9114F5B6CBF3540A64CE390127EC2F8BC6B5
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - ba ef 89 66 b0 7e fc 80-8f e1 37 6a 85 4c c3 2c   ...f.~....7j.L.,
+    0010 - 21 10 b6 ec 5b 25 1c d3-50 8b 10 c0 4f 02 fb d4   !...[%..P...O...
+    0020 - aa b9 d5 71 b9 06 5b be-a0 eb 09 45 a5 c0 38 ca   ...q..[....E..8.
+    0030 - ff 2b 93 2b c4 1e 57 29-06 c9 04 9d 80 8f 28 fb   .+.+..W)......(.
+    0040 - 83 45 1d c9 ce f2 b2 29-f0 6e 7d c9 44 f6 03 41   .E.....).n}.D..A
+    0050 - 19 91 8a ad 53 3a 21 7c-9b 0b 82 6b d0 a4 dd 39   ....S:!|...k...9
+    0060 - 50 e8 1a fe 60 61 0c db-64 de 3a 26 0a 5f 91 32   P...`a..d.:&._.2
+    0070 - 35 ba 56 38 eb f2 8d a1-01 28 72 c0 84 c9 62 19   5.V8.....(r...b.
+    0080 - 2a 03 91 79 9e 12 a0 d4-81 40 31 f4 11 df 46 41   *..y.....@1...FA
+    0090 - a8 e7 f8 0d aa 6f bc 5e-9e 45 2a 34 95 b5 9b ac   .....o.^.E*4....
+
+    Start Time: 1580163796
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+cluFn7wTiGryunymYOu4RcffSxQluehd
+Correct!
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+
+closed

@@ -1,0 +1,86 @@
+Bandit Level 15 → Level 16
+Level Goal
+
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
+
+Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the “CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of that command…
+Commands you may need to solve this level
+
+ssh, telnet, nc, openssl, s_client, nmap
+
+
+sshpass -p BfMYroe26WYalil77FoDi9qh59eK5xNr ssh bandit15@bandit.labs.overthewire.org -p 2220
+bandit15@bandit:~$ openssl s_client -connect localhost:30001
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIEYo1NxTANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjAwMTA1MTQzNTU4WhcNMjEwMTA0MTQzNTU4WjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKF4u2eu
+a8VipZPviX0hfNiCnaD2ojAffdBhKTy1bmZSNRuHPBDnU7z8rblNSknSjCITda1C
+GEAI8ZktRbtLpBTbYeTgqPN/EiN5UIRMKbU6P2O93zNFPBsmyfQLrgt+DSLnsxlB
+i/yYyT7WLdtNVBpgwRwkqi9K7dk9vf9waswLAgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBAJECW6IB3Ria4xG002BqD3zEbtmrDlK6nmJq+uQ4eJ6cT18o9REb
+npy/lFzlv2LfcrYAnuAp6Fh89MKaYjNzJURjRQ9RkmcYgQJa1n+OBkATb7V+84/a
+k9PDRkscxdNFMGBSvzFD33XZ5lbaGdrwCPyoxenoYghV/753wffN7J6H
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: A39A3A782849FD8CF225F685D84161632B19B5BF80A615185B80C38FD36D5220
+    Session-ID-ctx:
+    Master-Key: 55F30916A2FE0852398FF0FD73027469BEE80B8B3452CA4409217211E1888C13C4CB573707EFE32B3A8DE675F5CF50A1
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 56 e9 4e 87 6a 28 48 d0-13 42 5f b9 61 b0 dd d0   V.N.j(H..B_.a...
+    0010 - ca 4c 9a 13 75 0b ca 2f-5f d4 29 11 4b 77 02 f8   .L..u../_.).Kw..
+    0020 - ee 3c 77 30 8a 99 02 12-ed 71 76 7a e2 e1 66 e7   .<w0.....qvz..f.
+    0030 - 2b 34 f4 79 88 5c 62 c1-64 31 e3 46 d0 70 d6 6e   +4.y.\b.d1.F.p.n
+    0040 - c4 23 02 23 ce ae 43 5b-42 e0 ff 4b 77 2d b2 64   .#.#..C[B..Kw-.d
+    0050 - 3a e8 d9 43 3b 82 41 6a-e6 ea 6f cd 99 dd a3 04   :..C;.Aj..o.....
+    0060 - 02 4d b1 fe fb f9 d1 b2-67 86 e4 33 9d 8d d4 d1   .M......g..3....
+    0070 - 13 98 25 87 3c e8 b6 11-06 25 cb 16 18 50 70 67   ..%.<....%...Ppg
+    0080 - 15 7c 49 cf b0 91 df db-40 d3 4e d4 22 4a 0a c6   .|I.....@.N."J..
+    0090 - 89 57 60 90 c4 2b d4 ad-bf 07 0c 65 32 23 3b 2e   .W`..+.....e2#;.
+
+    Start Time: 1580163560
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+closed
