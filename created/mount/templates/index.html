@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+
+<head>
+  <title>ACFT Preview</title>
+</head>
+<pre>
+          _____ ______ _______   _____                _               
+    /\   / ____|  ____|__   __| |  __ \              (_)              
+   /  \ | |    | |__     | |    | |__) | __ _____   ___  _____      __
+  / /\ \| |    |  __|    | |    |  ___/ '__/ _ \ \ / / |/ _ \ \ /\ / /
+ / ____ \ |____| |       | |    | |   | | |  __/\ V /| |  __/\ V  V / 
+/_/    \_\_____|_|       |_|    |_|   |_|  \___| \_/ |_|\___| \_/\_/  
+                                                                                                                                    
+</pre>
+
+<body class="body">
+  <div class="login-page">
+    <div class="form">
+      <form action="" method="POST">
+        <p>username: <input type="text" name="username" /> </p>
+        <p>password: <input type="password" name="password" /> </p>
+        {% if error %}
+        <p style="color:red">{{error}}</p>
+        {% endif %}
+        {% if registered_user %}
+        <p style="color:green">Successfully added new user '{{registered_user}}'</p>
+        {% endif %}
+        {% if deleted_user %}
+        <p style="color:green">Successfully deleted user '{{deleted_user}}'</p>
+        {% endif %}
+        <p><input type="submit" value="login" name=action /></p>
+        <p><input type="submit" value="register" name=action /></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
