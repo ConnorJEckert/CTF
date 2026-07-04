@@ -1,0 +1,9 @@
+1. The door order that must be achieved to successfully allow the team to infiltrate the building is: [door_3, door_0, door_4, door_1, door_2] and must be sequential.
+
+2. The coils for the doors have restricted access on the Modbus network and can not be written.
+
+3. The sensors are hardwired to coils, thus driving the coil will result in the sensor signal being altered.
+
+4. SYSTEM REST: Upon mission completion, the system will reset after approximately two minutes.
+
+5. FLAG: the flag will be available on the holding registers starting at address 4 upon completion of the mission.
